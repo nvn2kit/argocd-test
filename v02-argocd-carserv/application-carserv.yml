@@ -6,7 +6,7 @@ spec:
   destination:
     namespace: car-serv
     server: https://kubernetes.default.svc
-  project: car-serv
+  project: default
   source:
     path: v02-argocd-carserv/template
     repoURL: https://github.com/nvn2kit/argocd-test.git
