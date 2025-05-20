@@ -4,9 +4,9 @@ metadata:
   name: application-carsrv
 spec:
   destination:
-    namespace: default
+    namespace: car-serv
     server: https://kubernetes.default.svc
-  project: default
+  project: car-serv
   source:
     path: v02-argocd-carserv/template
     repoURL: https://github.com/nvn2kit/argocd-test.git
