@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application-carsrv
+  name: car-serv
 spec:
   destination:
     namespace: car-serv
