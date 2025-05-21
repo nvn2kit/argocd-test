@@ -12,7 +12,7 @@ spec:
     - name: tcp
       port: 80
       protocol: TCP
-      targetPort: 30080
+      targetPort: 80
   selector:
     app: car-serv
   sessionAffinity: None
