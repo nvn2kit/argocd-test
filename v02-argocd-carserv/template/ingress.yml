@@ -3,16 +3,19 @@ kind: Ingress
 metadata:
   name: car-serv-ingress
   namespace: car-serv
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-    - host: nghianv.test
+    - host: car-serv.local
       http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: car-serv-service
                 port:
                   number: 80
-            path: /
-            pathType: Prefix
+
