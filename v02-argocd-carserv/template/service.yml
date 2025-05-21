@@ -12,9 +12,9 @@ spec:
     - name: tcp
       port: 80
       protocol: TCP
-      nodePort: 30080
+      targetPort: 30080
   selector:
     app: car-serv
   sessionAffinity: None
-  type: NodePort
+  type: ClusterIP
 
